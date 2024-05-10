@@ -14,5 +14,5 @@ void print_star()
 
 void print_message()
 {
-  printf("wdf")
+  printf("world")
 }
