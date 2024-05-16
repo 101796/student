@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		*{
+			font-size: 14px;margin: 0;padding: 0;border: none;
+			}
+		a {
+			text-decoration: line-through;
+			}
+		header{
+			position: relative;
+			height: 80px;
+			background: #4685c6;
+			background-image: linear-gradient(to bottom,#ffaaff,#06b8fa);
+		}
+		.container{
+			position: relative;
+			z-index: 1;
+			width: 1200px;
+			margin: auto;
+		}
+		header>.content>a{
+			display: block;
+			float: left;
+			margin: 15px 25px;
+			width:110px;
+			height:73px;
+		}
+		header:after{
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			width:100%;
+			height:7px;
+			content: "";
+			background:#d6d6d6;
+		}
+		header .container nav{float: right;}
+		nav ul{list-style: none;}
+		nav ul li{
+			float: left;
+			width: 110px;
+			height: 73px;
+			text-align: center;
+		}
+		nav a{color: #ffffff;font-size: 16px;font-family: "微软雅黑";line-height: 73px;}
+		nav ul li:nth-child(1){background: #0055ff;}
+		nav ul li:nth-child(2){background: #aa55ff;}
+		nav ul li:nth-child(3){background: #00aaff;}
+		nav ul li:nth-child(4){background: #aaaaff;}
+		nav ul li:nth-child(5){background: #00ffff;}
+		nav ul li:nth-child(6){background: #aaffff;}
+		nav ul li:hover,
+		nav ul li.active{
+			padding-bottom: 7px;
+		}
+		.banner{
+			height:538px;
+			background-color: #eaeaea;
+			background-image: url(images/banner/1.jpg),url(images/banner/2.jpg),url(images/banner/3.jpg);
+			background-repeat: no-repeat;
+			background-position: center,20% 50%,80% 50%;
+			background-size: 1200px,900px,900px;
+
+		}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<a href="美化门户网站导航与banner区域.html"><img src="images/logo.png"></a>
+				<nav>
+					<ul>
+						<li><a class="active"href='#'>门户首页</a></li>
+						<li><a href='#'>学校概况</a></li>
+						<li><a href='#'>组织机构</a></li>
+						<li><a href='#'>招生就业</a></li>
+						<li><a href='#'>科学研究</a></li>
+						<li><a href='#'>招聘信息</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section  class="banner"></section>
+	</body>
+</html>
